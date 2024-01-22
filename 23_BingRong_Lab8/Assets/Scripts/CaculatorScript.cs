@@ -25,7 +25,7 @@ public class CaculatorScript : MonoBehaviour
             }
             else if (USDollars.isOn == false && JapaneseYen.isOn == true)
             {
-                OutputAmt.text = "$" + (inputAmount * JpyConversion);
+                OutputAmt.text = "¥" + (inputAmount * JpyConversion);
             }
             else if (USDollars.isOn == true && JapaneseYen.isOn == true)
             {
