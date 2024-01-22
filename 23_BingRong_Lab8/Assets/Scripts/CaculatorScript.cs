@@ -36,8 +36,6 @@ public class CaculatorScript : MonoBehaviour
         //{
         //    DebuggingText.text = "Pleave Enter Valid Amount.";
         //}
-
-        
     }
     public void Clear()
     {
