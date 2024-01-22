@@ -14,10 +14,10 @@ public class CaculatorScript : MonoBehaviour
     private float JpyConversion = 82.78f;
     private float inputAmount = 0f;
 
-    public void Convert()
+    public void Convert() 
     {
-        //try
-        //{
+        try
+        {
             inputAmount = float.Parse(InputAmt.text);
             if (USDollars.isOn == true && JapaneseYen.isOn == false)
             {
@@ -31,11 +31,12 @@ public class CaculatorScript : MonoBehaviour
             {
                 DebuggingText.text = "Please Select Only one Conversion Currency";
             }
-        //}
-        //catch (System.FormatException)
-        //{
-        //    DebuggingText.text = "Pleave Enter Valid Amount.";
-        //}
+        }
+        catch (System.FormatException)
+        {
+            OutputAmt.text = "";
+            DebuggingText.text = "Pleave Enter Valid Amount.";
+        }
     }
     public void Clear()
     {
